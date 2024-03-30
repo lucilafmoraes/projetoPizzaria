@@ -1,0 +1,19 @@
+header{
+    padding: 30px;
+    background-color: var(--preto);
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.links a:hover{
+    color: var(--azul);
+    transition: 0.5s;
+}

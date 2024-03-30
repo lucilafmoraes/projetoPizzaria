@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/inserir.css">
+    <link rel="stylesheet" href="../css/root.css">
+    <script src="../js/pedidoInserir.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Pizzaria do Igão</h1>
+        <div class="links">
+            <a href="./index.html">Home</a> 
+        </div>
+    </header>
+    <section>
+        <div class="div-form">
+            <h1>Faça o seu pedido</h1>
+            <form action="" id="pedido" class="pedido">
+                <label for="nome">Insira seu nome:</label>
+                <input type="text" id="nome" required>
+                <br>
+                <br>
+                <label for="selecionar">Selecione os itens do seu pedido: </label>
+                <div id="comidas">
+                    <select id="comida" required>
+                        <option selected hidden disabled>Comidas</option>
+                        <option value="Pizza G">Pizza grande</option>
+                        <option value="Pizza M">Pizza media</option>
+                        <option value="Pizza P">Pizza pequena</option>
+                    </select>
+                </div>
+                <div id="bebidas">
+                    <select id="bebida" required>
+                        <option selected hidden disabled>Bebidas</option>
+                        <option value="Coca-cola">Coca-Cola</option>
+                        <option value="Guaraná">Guaraná</option>
+                        <option value="Suco">Suco</option>
+                    </select>
+                </div>
+                <br>
+                <input type="submit" class="button" id="enviarPedido" value="ENVIAR PEDIDO">
+            </form>
+            <br>
+            <br>
+        </div>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>PRODUTOS</th>
+                    <th>VALORES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Suco</td><td>R$10</td>
+                </tr>
+                <tr>
+                    <td>Coca-cola</td><td>R$8</td>
+                <tr>
+                    <td>Guaraná</td><td>R$8</td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>Pizza Grande</td><td>R$40</td>
+                </tr>
+                <tr>
+                    <td>Pizza média</td><td>R$30</td>
+                </tr>
+                <tr>
+                    <td>Pizza pequena</td><td>R$20</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+</body>
+</html>
